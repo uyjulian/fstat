@@ -1,4 +1,4 @@
-#include "ncbind/ncbind.hpp"
+#include "ncbind.hpp"
 #include <string>
 #include <vector>
 using namespace std;
@@ -981,8 +981,8 @@ public:
 	/**
 	 * パスの検索
 	 * @param filename   検索対象ファイル名
-	 * @param searchpath 検索対象パス（ローカル表記(c:\〜等)で";"区切り，省略時はシステムのデフォルト検索パス）
-	 * @return 見つからなかった場合はvoid，見つかった場合はファイルのフルパス(file://./〜)
+	 * @param searchpath 検索対象パス（ローカル表記(c:\～等)で";"区切り，省略時はシステムのデフォルト検索パス）
+	 * @return 見つからなかった場合はvoid，見つかった場合はファイルのフルパス(file://./～)
 	 */
 	static tjs_error TJS_INTF_METHOD searchPath(tTJSVariant *result,
 												tjs_int numparams,

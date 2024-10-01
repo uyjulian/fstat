@@ -193,7 +193,7 @@ class Storages {
 	 * @param to コピー先ファイル
 	 * @param failIfExist ファイルが存在するときに失敗するなら ture、上書きするなら false
 	 * @return 実際にコピーできたら true
-	 * ※toには「file://./c/〜」のようにフルパスで記述しないと例外が発生します
+	 * ※toには「file://./c/～」のようにフルパスで記述しないと例外が発生します
 	 */
 	function copyFileNoNormalize(from, to, failIfExist);
 
@@ -223,8 +223,8 @@ class Storages {
 	/**
 	 * パスの検索
 	 * @param filename   検索対象ファイル名
-	 * @param searchpath 検索対象パス（ローカル表記(c:¥〜等)で";"区切り，省略時はシステムのデフォルト検索パス）
-	 * @return 見つからなかった場合はvoid，見つかった場合はファイルのフルパス(file://./〜)
+	 * @param searchpath 検索対象パス（ローカル表記(c:\～等)で";"区切り，省略時はシステムのデフォルト検索パス）
+	 * @return 見つからなかった場合はvoid，見つかった場合はファイルのフルパス(file://./～)
 	 */
 	function searchPath(filename, searchpath); // by miahmie
 
